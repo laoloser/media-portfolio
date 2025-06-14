@@ -45,18 +45,18 @@
             </div>
             <div id="photo-selector">
                 <div class="thumbnail-wrapper">
-                <div id="photo1" class="photo-thumbnail">
-                    <img src="assets/images/yolk-sq.jpg" alt="cosplay girl"></img>
-                </div>
-                </div>
-                <div class="thumbnail-wrapper">
-                <div id="photo2" class="photo-thumbnail">
-                    <img src="assets/images/pau-sq.jpg" alt="girl graduation photo"></img>
-                </div>
+                    <div id="photo1" class="photo-thumbnail">
+                        <img src="assets/images/yolk-sq.jpg" alt="cosplay girl"></img>
+                    </div>
                 </div>
                 <div class="thumbnail-wrapper">
-                <div id="photo3" class="photo-thumbnail"></div>
-            </div>
+                    <div id="photo2" class="photo-thumbnail">
+                        <img src="assets/images/pau-sq.jpg" alt="girl graduation photo"></img>
+                    </div>
+                </div>
+                <div class="thumbnail-wrapper">
+                    <div id="photo3" class="photo-thumbnail"></div>
+                </div>
             </div>
         </div>
         <div id="video" class="sections">
@@ -84,7 +84,15 @@
                                 to 4k for Youtube</p>
                         </div>
                         <div id="video-player1" class="video-player">
-                            <video id="drama-video" src="assets/video/Drama.mp4" controls autoplay muted loop></video>
+                            <div style="padding:50.25% 0 0 0;position:relative;">
+                                <iframe id="vimeo-drama"
+                                    src="https://player.vimeo.com/video/1093400636?autopause=0&autoplay=1&muted=1"
+                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Drama">
+                                </iframe>
+                            </div>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
+                            <!-- <video id="drama-video" src="assets/video/Drama.mp4" controls autoplay muted loop></video> -->
                         </div>
                     </div>
                     <div id="video-media2" class="video-media">
@@ -96,8 +104,17 @@
                                 90% of the shots were filmed with a DJI Ronin-M paired with the 50mm.</p>
                         </div>
                         <div id="video-player2" class="video-player">
-                            <video id="wedding-video" src="assets/video/Wedding.mp4" controls autoplay muted
-                                loop></video>
+                            <!-- <video id="wedding-video" src="assets/video/Wedding.mp4" controls autoplay muted
+                                loop></video> -->
+                            <div style="padding:50.25% 0 0 0;position:relative;">
+                                <iframe id="vimeo-wedding"
+                                    src="https://player.vimeo.com/video/1093400653?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                    frameborder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                    title="Wedding"></iframe>
+                            </div>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
                         </div>
                     </div>
                     <div id="video-media3" class="video-media">
@@ -109,8 +126,16 @@
                                 Exported to 4k. Horizontal and Vertical versions were sent to the client.</p>
                         </div>
                         <div id="video-player3" class="video-player">
-                            <video id="wedding-video" src="assets/video/legends.mp4" controls autoplay muted
-                                loop></video>
+                            <!-- <video id="wedding-video" src="assets/video/legends.mp4" controls autoplay muted
+                                loop></video> -->
+                            <div style="padding:50.25% 0 0 0;position:relative;">
+                                <iframe id="vimeo-legends"
+                                    src="https://player.vimeo.com/video/1093400646?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                    frameborder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                    title="legends"></iframe></div>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
                         </div>
                     </div>
                 </div>
@@ -166,7 +191,8 @@
                             <div class="program-info">
                                 <h3>Adobe Lightroom</h3>
                                 <p>My main editor for photos, used to edit in batches<br>
-                                <br>Adjusting exposure, white balance, noise reduction and basic masking.</p>
+                                    <br>Adjusting exposure, white balance, noise reduction and basic masking.
+                                </p>
                             </div>
                         </div>
                         <div id="photoshop" class="programs">
@@ -176,7 +202,8 @@
                             <div class="program-info">
                                 <h3>Adobe Photoshop</h3>
                                 <p>Used for additional photo editing that cannot be done inside lightroom<br>
-                                <br>Also used for graphic design, and single or small batches of photo editing</p>
+                                    <br>Also used for graphic design, and single or small batches of photo editing
+                                </p>
                             </div>
                         </div>
                         <div id="reason" class="programs">
@@ -186,7 +213,9 @@
                             <div class="program-info">
                                 <h3>Reason</h3>
                                 <p>Used for heavy audio processing.<br>
-                                <br>This is what I use to record voice overs as well as a lot of cleanup and EQing for audio from other sources.</p>
+                                    <br>This is what I use to record voice overs as well as a lot of cleanup and EQing
+                                    for audio from other sources.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -194,7 +223,7 @@
                 <img id="arrow-right-edit" src="assets/images/arrow-right.png" alt="arrow for navigation"></img>
             </div>
 
-            
+
         </div>
 
         </div>

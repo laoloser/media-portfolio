@@ -72,10 +72,11 @@ function slideshowSelect(a) {
 }
 
 function videoSelect(b) {
-    document.querySelectorAll("video").forEach(video => {
-        video.pause();
-        video.muted = true;
+    // Pause all players
+    Object.values(vimeoPlayers).forEach(player => {
+        player.pause().catch(() => {}); // Avoid unhandled errors
     });
+
     videoMedia = b;
     videoShow(videoMedia);
 }
@@ -104,6 +105,12 @@ arrowLeftEdit.onclick = () => {
 
 arrowRightEdit.onclick = () => {
     editingContainer.scrollLeft += 500; 
+};
+
+const vimeoPlayers = {
+  1: new Vimeo.Player('vimeo-drama'),
+  2: new Vimeo.Player('vimeo-wedding'),
+  3: new Vimeo.Player('vimeo-legends')
 };
 
 
